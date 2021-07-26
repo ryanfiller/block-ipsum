@@ -1,4 +1,4 @@
-import { LoremIpsum } from 'lorem-ipsum'
+import LoremIpsum from 'lorem-ipsum'
 
 const defaultOptions = {
   sentencesPerParagraph: { max: 8, min: 4 },

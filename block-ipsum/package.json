@@ -8,8 +8,21 @@
   "bugs": {
     "url": "https://github.com/ryanfiller/block-ipsum/issues"
   },
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w"
+  },
+  "devDependencies": {
+    "rollup": "^2.23.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-svelte": "^5.2.3",
+    "svelte": "^3.24.0"
+  },
   "dependencies": {
     "lorem-ipsum": "^2.0.3"
   }
