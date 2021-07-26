@@ -1,5 +1,5 @@
 {
-  "name": "block-ipsum",
+  "name": "block-ipsum-example",
   "version": "0.0.1",
   "scripts": {
     "dev": "svelte-kit dev",
@@ -27,6 +27,6 @@
   },
   "type": "module",
   "dependencies": {
-    "lorem-ipsum": "^2.0.3"
+    "block-ipsum": "file:./block-ipsum"
   }
 }

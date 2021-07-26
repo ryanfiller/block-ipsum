@@ -1,0 +1,16 @@
+{
+  "name": "block-ipsum",
+  "author": "Ryan Filler <ryanfiller89@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ryanfiller/block-ipsum"
+  },
+  "bugs": {
+    "url": "https://github.com/ryanfiller/block-ipsum/issues"
+  },
+  "version": "0.0.1",
+  "type": "module",
+  "dependencies": {
+    "lorem-ipsum": "^2.0.3"
+  }
+}

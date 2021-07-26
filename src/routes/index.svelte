@@ -1,35 +1,19 @@
 <script>
-	import { LoremIpsum } from 'lorem-ipsum';
-
-	const lorem = new LoremIpsum({
-		sentencesPerParagraph: { max: 8, min: 4 },
-		wordsPerSentence: { max: 16, min: 4 }
-	})
+	import blockIpsum from 'block-ipsum'
 
   const blocks = [ '█', '▉', '▊', '▋', '▌', '▍', '▎', '▏', '▐', '▀', '▁', '▂', '▃', '▄', '▅', '▆', '▇', '░', '▒', '▓', '▔', '▕', '▖', '▗', '▘', '▙', '▚', '▛', '▜', '▝', '▞', '▟' ]
 
-  let number = 1
+  let length = 1
   let type
   let character = blocks[0]
   let result = ''
 
-  function replace(text) {
-    return text.replace(/[^\s]/g, character.trim())
-  }
-
   function generate() {
-    switch (type.trim()) {
-      case 'words':
-        result = lorem.generateWords(number)
-        break
-      case 'sentences':
-        result = lorem.generateSentences(number)
-        break
-      case 'paragraphs':
-        result = lorem.generateParagraphs(number)
-        break
-    }
-    result = replace(result)
+    result = blockIpsum({
+      length: length,
+      type: type,
+      character: character,
+    })
   }
 
   let copyText = 'copy'
@@ -70,14 +54,14 @@
   <fieldset class='options'>
     <legend>options: </legend>
 
-    <label for='number'>
-      <span>number: </span>
+    <label for='length'>
+      <span>length: </span>
       <input
-        name='number'
-        id='number'
+        name='length'
+        id='length'
         type='number'
         min='1'
-        bind:value={number}
+        bind:value={length}
       />
     </label>
   
