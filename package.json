@@ -28,6 +28,7 @@
   },
   "type": "module",
   "dependencies": {
-    "block-ipsum": "file:./block-ipsum"
+    "block-ipsum": "file:./block-ipsum",
+    "lorem-ipsum": "^2.0.3"
   }
 }
