@@ -35,6 +35,8 @@
   <meta name='author' content='www.ryanfiller.com'>
   <meta name='description' content='Have you ever wanted to use lorem ipsum but found the fake Latin still too distracting? Maybe you just want to make it look like your placeholder text is all redacted-like. Either way, this is the text generator for you.'>
   <meta name='keywords' content='lorem ipsum block redacted'>
+  <!-- cashmoney -->
+  <meta name='monetization' content='$ilp.uphold.com/grFqX3z4EBqj'>
 </svelte:head>
 
 <header>
@@ -161,12 +163,14 @@
   :global(html) {
     margin: 0;
     padding: 0;
-  }
-
-  :global(#svelte) {
     height: 100vh;
     width: 100vw;
     overflow: auto;
+  }
+
+  :global(#svelte) {
+    height: 100%;
+    width: 100%;
     display: grid;
     padding: var(--space);
     gap: var(--space);
