@@ -12,7 +12,10 @@ function blockIpsum({
   options = defaultOptions
 }) {
   
-  const lorem = new LoremIpsum({
+  const lorem = new LoremIpsum(
+    options
+    ? {...options}
+    : {
     sentencesPerParagraph: { max: 8, min: 4 },
     wordsPerSentence: { max: 16, min: 4 }
   })
