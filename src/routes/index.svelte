@@ -47,6 +47,8 @@
 	</p>
 	<p>Maybe you just want to make it look like your placeholder text is all redacted-like.</p>
 	<p>Either way, this is the text generator for you.</p>
+	<br />
+	<p>Download the <a href="https://www.npmjs.com/package/block-ipsum">NPM Package</a> and use this directly in your project.</p>
 </header>
 
 <main>

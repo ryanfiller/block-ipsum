@@ -8,7 +8,7 @@
   "bugs": {
     "url": "https://github.com/ryanfiller/block-ipsum/issues"
   },
-  "version": "0.0.1",
+  "version": "0.0.2",
   "type": "module",
   "dependencies": {
     "lorem-ipsum": "^2.0.3"
