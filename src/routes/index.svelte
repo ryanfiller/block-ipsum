@@ -46,6 +46,13 @@
   }
 </script>
 
+<svelte:head>
+  <title>█████-ipsum </title>
+  <meta name='author' content='www.ryanfiller.com'>
+  <meta name='description' content='Have you ever wanted to use lorem ipsum but found the fake Latin still too distracting? Maybe you just want to make it look like your placeholder text is all redacted-like. Either way, this is the text generator for you.'>
+  <meta name='keywords' content='lorem ipsum block redacted'>
+</svelte:head>
+
 <header>
 	<h1>
 		<code>█████-ipsum </code>
@@ -139,7 +146,7 @@
 </main>
 
 <footer>
-  made with <a href='https://svelte.dev/'>svelte</a> and ♥ | <a href='https://www.ryanfiller.com/'>www.ryanfiller.com</a>
+  made with <a href='https://svelte.dev/'>svelte</a> and ♥ | <a href='https://www.ryanfiller.com?src=block-ipsum/'>www.ryanfiller.com</a>
 </footer>
 
 
