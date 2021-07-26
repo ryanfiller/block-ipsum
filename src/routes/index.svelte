@@ -1,5 +1,5 @@
 <script>
-	import blockIpsum from 'block-ipsum'
+	import blockIpsum from 'block-ipsum/index.js'
 
   const blocks = [ '█', '▉', '▊', '▋', '▌', '▍', '▎', '▏', '▐', '▀', '▁', '▂', '▃', '▄', '▅', '▆', '▇', '░', '▒', '▓', '▔', '▕', '▖', '▗', '▘', '▙', '▚', '▛', '▜', '▝', '▞', '▟' ]
 

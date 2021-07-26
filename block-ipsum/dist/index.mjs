@@ -580,8 +580,8 @@ exports.loremIpsum = loremIpsum;
 
 });
 
-var LoremIpsum = unwrapExports(dist);
-dist.loremIpsum;
+unwrapExports(dist);
+var dist_1 = dist.loremIpsum;
 
 const defaultOptions = {
   sentencesPerParagraph: { max: 8, min: 4 },
@@ -595,7 +595,7 @@ function blockIpsum({
   options = defaultOptions
 }) {
   
-  const lorem = new LoremIpsum(
+  const lorem = new dist_1(
     options
     ? {...options}
     : {

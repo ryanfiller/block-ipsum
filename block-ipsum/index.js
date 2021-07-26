@@ -1,4 +1,4 @@
-import LoremIpsum from 'lorem-ipsum'
+import { loremIpsum } from 'lorem-ipsum'
 
 const defaultOptions = {
   sentencesPerParagraph: { max: 8, min: 4 },
@@ -12,7 +12,7 @@ function blockIpsum({
   options = defaultOptions
 }) {
   
-  const lorem = new LoremIpsum(
+  const lorem = new loremIpsum(
     options
     ? {...options}
     : {
