@@ -1,5 +1,6 @@
-import * as Package from 'lorem-ipsum'
-const loremIpsum = Package.LoremIpsum
+// import { LoremIpsum } from 'lorem-ipsum'
+import li from 'lorem-ipsum'
+const { LoremIpsum } = li
 
 const defaultOptions = {
   sentencesPerParagraph: { max: 8, min: 4 },
@@ -13,7 +14,7 @@ function blockIpsum({
   options = defaultOptions
 }) {
   
-  const lorem = new loremIpsum(
+  const lorem = new LoremIpsum(
     options
     ? {...options}
     : {

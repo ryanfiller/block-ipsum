@@ -582,10 +582,11 @@ exports.loremIpsum = loremIpsum;
 
 });
 
-unwrapExports(dist);
+var li = unwrapExports(dist);
 dist.loremIpsum;
 
-const loremIpsum = undefined;
+// import { LoremIpsum } from 'lorem-ipsum'
+const { LoremIpsum } = li;
 
 const defaultOptions = {
   sentencesPerParagraph: { max: 8, min: 4 },
@@ -599,7 +600,7 @@ function blockIpsum({
   options = defaultOptions
 }) {
   
-  const lorem = new loremIpsum(
+  const lorem = new LoremIpsum(
     options
     ? {...options}
     : {
