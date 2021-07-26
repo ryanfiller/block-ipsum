@@ -121,7 +121,6 @@
       <textarea
         name='result'
         id='result'
-        disabled
         value={result}
       />
     </label>
@@ -178,10 +177,9 @@
     display: grid;
     padding: var(--space);
     gap: var(--space);
-    grid-template-columns: 1fr minmax(auto, var(--width)) 1fr;
-    grid-template-rows: 1fr min-content minmax(50vh, min-content) 1fr min-content;
+    grid-template-columns: 1fr minmax(min-content, var(--width)) 1fr;
+    grid-template-rows: min-content minmax(50vh, min-content) 1fr min-content;
     grid-template-areas:
-    '. .      .'
     '. header .'
     '. main   .'
     '. .      .'
@@ -212,6 +210,13 @@
     cursor: pointer;
   }
 
+  button,
+  button span {
+    background-color: var(--text);
+    color: var(--background);
+    font-weight: bold;
+  }
+
   button[disabled] {
     cursor: not-allowed;
   }
@@ -237,16 +242,19 @@
 
   fieldset {
     display: flex;
+    flex-wrap: wrap;
     align-items: end;
     padding: calc(1 * var(--space));
+    gap: var(--space);
+  }
+
+  legend {
+    font-weight: bold;
+    font-size: 1.25em;
   }
 
   fieldset + fieldset {
     margin-top: var(--space);
-  }
-
-  fieldset > *:not(:last-child) {
-    margin-right: var(--space);
   }
 
   fieldset.result {
@@ -269,7 +277,6 @@
   }
 
   fieldset.result button {
-    margin-top: var(--space);
     width: 100%;
   }
 </style>
