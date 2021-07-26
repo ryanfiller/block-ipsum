@@ -1,4 +1,5 @@
-import { loremIpsum } from 'lorem-ipsum'
+import * as Package from 'lorem-ipsum'
+const loremIpsum = Package.LoremIpsum
 
 const defaultOptions = {
   sentencesPerParagraph: { max: 8, min: 4 },

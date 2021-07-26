@@ -583,7 +583,9 @@ exports.loremIpsum = loremIpsum;
 });
 
 unwrapExports(dist);
-var dist_1 = dist.loremIpsum;
+dist.loremIpsum;
+
+const loremIpsum = undefined;
 
 const defaultOptions = {
   sentencesPerParagraph: { max: 8, min: 4 },
@@ -597,7 +599,7 @@ function blockIpsum({
   options = defaultOptions
 }) {
   
-  const lorem = new dist_1(
+  const lorem = new loremIpsum(
     options
     ? {...options}
     : {
